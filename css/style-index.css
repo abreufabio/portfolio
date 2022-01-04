@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Pushster&display=swap');
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+:root
+{
+    --cor: #211e1e;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--cor);
+}
+.navegacao
+{
+    position: relative;
+    width: 400px;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.navegacao ul
+{
+    display: flex;
+    width: 350px;
+}
+.navegacao ul li
+{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.navegacao ul li a
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.navegacao ul li a .icone
+{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--cor);
+}
+.navegacao ul li.active a .icone
+{
+    transform: translateY(-32px);
+}
+.navegacao ul li a .texto
+{
+    position: absolute;
+    color: var(--cor);
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.navegacao ul li.active a .texto
+{
+    opacity: 1;
+    transform: translateY(10px);
+}
+.indicador
+{
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: #1cca01;
+    border-radius: 50%;
+    border: 6px solid var(--cor);
+}
+.indicador::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 0 var(--cor);
+}
+.indicador::after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 0 var(--cor);
+}
+.navegacao ul li:nth-child(1).active ~ .indicador
+{
+    transform: translateX(calc(70px * 0));
+}
+.navegacao ul li:nth-child(2).active ~ .indicador
+{
+    transform: translateX(calc(70px * 1));
+}
+.navegacao ul li:nth-child(3).active ~ .indicador
+{
+    transform: translateX(calc(70px * 2));
+}
+.navegacao ul li:nth-child(4).active ~ .indicador
+{
+    transform: translateX(calc(70px * 3));
+}
+.navegacao ul li:nth-child(5).active ~ .indicador
+{
+    transform: translateX(calc(70px * 4));
+}
