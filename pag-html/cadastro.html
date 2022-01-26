@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/style-cadastro.css">
+
+    <link rel="sorcut icon" href="../img/icon_cadastro.png" type="image/png" style="width: 16px; height: 16px;">
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header class="cheader">
+        <a href="../index.html"><img class="cheader-icon" src="../img/home.png"></a>
+        <nav class="cheader-menu">
+            <a class="cheader-menu-item" href="#inicio">Inicio</a>
+            <a class="cheader-menu-item" href="#academia">Academia +Saúde</a>
+            <a class="cheader-menu-item" href="#mercado">Mercado Compre+</a>
+            <a class="cheader-menu-item" href="#creche">Creche Menor de todos</a>
+            <a class="cheader-menu-item" href="#contato">Contato</a>
+        </nav>
+    </header>
+    <main class="cmain">
+        <section class="cmain-s1" id="inicio">
+            <div class="cmain-s1-conteudo">
+                <H3 class="cmain-s1-conteudo-titulo">Sobre esta página</H3>
+                <p class="cmain-s1-conteudo-text">Olá, tudo bom? Nesta pagina você encontrará diversos formularios
+                    diferentes, tendo em vista
+                    que cada um deles é para um determinado uso. Cada um contará com um estilo próprio de estilização.
+                    Lembrando que cada um deles usa puramente <strong>CSS</strong>, nada nessa página faz uso de
+                    <strong>Bootstrap</strong>.
+                </p>
+            </div>
+            <div class="cmain-s1-dev">
+                <div class="efeitofundo">
+                    <img class="cmain-s1-dev-img" src="../img/programador.png">
+                </div>
+            </div>
+        </section>
+        <Section class="cmain-s2" id="academia">
+            <div class="cmain-s2-d1">
+                <form class="cmain-s2-form">
+                    <h4 class="cmain-s2-form-h4">Formulario de cadastro:</h4>
+                    <div class="cmain-s2-form-d1">
+                        <div class="cmain-s2-form-d1l">
+                            <label>Nome:</label>
+                            <input>
+                        </div>
+                        <div class="cmain-s2-form-d1l">
+                            <label>Sobrenome:</label>
+                            <input>
+                        </div>
+                        <div class="cmain-s2-form-d1l">
+                            <label>Idade:</label>
+                            <input>
+                        </div>
+                        <div class="cmain-s2-form-d1l">
+                            <label>Sexo:</label>
+                            <input>
+                        </div>
+                    </div>
+                    <div class="cmain-s2-form-d2">
+                        <div class="cmain-s2-form-d2-input">
+                            <label>Peso:</label>
+                            <input>
+                            <label style="padding-left: 50px;">Altura:</label>
+                            <input>
+                        </div>
+                        <div class="cmain-s2-form-d2l">
+                            <label>Você conhece o seu biotipo? Se sim, qual?</label>
+                            <input>
+                        </div>
+                        <div class="cmain-s2-form-d2l">
+                            <label>Qual sua moticação para malhar conosco?</label>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div style="padding-top: 8px; padding-bottom: 8px; align-items: center;">
+                        <button class="btn-a">Enivar</button>
+                    </div>
+                </form>
+            </div>
+        </Section>
+        <section class="cmain-s3" id="mercado">
+            <div class="cmain-s3-d1">
+                <h4 class="cmain-s3-form-h4">Formulario de cadastro:</h4>
+                <form class="cmain-s3-form">
+                    <div class="cmain-s3-form-d1">
+                        <div class="cmain-s3-form-sd1">
+                            <input id="name" class="input" type="text" pattern=".+" required />
+                            <label class="label" for="name">Nome:</label>
+                        </div>
+                        <div class="cmain-s3-form-sd1">
+                            <input id="sobrenome" class="input" type="text" pattern=".+" required />
+                            <label class="label" for="sobrenome">Sobrenome:</label>
+                        </div>
+                        <div class="cmain-s3-form-sd1">
+                            <input id="cpf" class="input" type="text" pattern=".+" required />
+                            <label class="label" for="cpf">Cpf:</label>
+                        </div>
+                        <div class="cmain-s3-form-sd1">
+                            <input id="telefone" class="input" type="text" pattern=".+" required>
+                            <label class="label" for="telefone">Telefone:</label>
+                        </div>
+                        <div class="cmain-s3-form-sd1">
+                            <select id="sexo" class="input" type="text" pattern=".+" required name="sexo">
+                                <option></option>
+                                <option>Masculino</option>
+                                <option>Feminino</option>
+                                <option>Prefiro não dizer</option>
+                            </select>
+                            <label class="label" for="sexo">Sexo</label>
+                        </div>
+                    </div>
+                    <div class="cmain-s3-form-d2">
+                        <div class="cmain-s3-form-sd1">
+                            <input id="email" class="input" type="text" pattern=".+" required />
+                            <label class="label" for="email">Email:</label>
+                        </div>
+                        <div class="cmain-s3-form-sd1">
+                            <input id="cemail" class="input" type="text" pattern=".+" required />
+                            <label class="label" for="cemail">Confime seu email:</label>
+                        </div>
+                        <div class="cmain-s3-form-sd1">
+                            <input id="senha" class="input" type="text" pattern=".+" required />
+                            <label class="label" for="senha">Senha:</label>
+                        </div>
+                        <div class="cmain-s3-form-sd1">
+                            <input id="csenha" class="input" type="text" pattern=".+" required>
+                            <label class="label" for="csenha">Confirme sua senha:</label>
+                        </div>
+                        <div class="cmain-s3-form-bd2">
+                            <button>Enivar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="cmain-s4" id="creche">
+            <div class="cmain-s4-d1">
+                <form class="cmain-s4-form">
+                    <div class="cmain-s4-form-divP">
+                        <div class="cmain-s4-form-h4">
+                            <h4>Fomulario de matricula inicial</h4>
+                        </div>
+                        <div class="cmain-s4-form-d1">
+                            <div class="cmain-s4-form-pd">
+                                <div class="cmain-s4-form-l">
+                                    <label>Nome completo dos pais ou resposnsaveis:</label>
+                                    <input>
+                                    <input>
+                                </div>
+                                <div class="cmain-s4-form-l">
+                                    <label>Telefone para contato:</label>
+                                    <input>
+                                    <input>
+                                </div>
+                                <div class="cmain-s4-form-l">
+                                    <label>Pessoa autoriada a buscar a criança:</label>
+                                    <input>
+                                    <input>
+                                </div>
+                            </div>
+                            <div class="cmain-s4-form-sd">
+                                <div class="cmain-s4-form-l">
+                                    <label>Nome Completo da Criança:</label>
+                                    <input>
+                                </div>
+                                <div class="cmain-s4-form-l">
+                                    <label>Idade da Criança:</label>
+                                    <input>
+                                </div>
+                                <div class="cmain-s4-form-l">
+                                    <label>Data de Aniversario:</label>
+                                    <input type="date">
+                                </div>
+                                <div class="cmain-s4-form-l">
+                                    <label>Sexo da criança:</label>
+                                    <div class="cmain-s4-form-sbr">
+                                        <div class="cmain-s4-form-br">
+                                            <input type="radio" value="Masculino" name="sexo">
+                                            <label>Masculino</label>
+                                        </div>
+                                        <div class="cmain-s4-form-br">
+                                            <input type="radio" value="Feminino" name="sexo">
+                                            <label>Feminino</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cmain-s4-form-d2">
+                            <div class="cmain-s4-form-2l">
+                                <label>A Criança possui alguma alergia, se sim qual?</label>
+                                <input>
+                                <label>A Criança possui alguma deficiência, se sim qual?</label>
+                                <input>
+                                <label>A Criaça possui alguma restrição alimentar, se sim, qual?</label>
+                                <input>
+                                <label>Porquê gostaria de matricular seu filho na nossa creche</label>
+                                <input>
+                            </div>
+                        </div>
+                        <div class="cmain-s4-form-d2b">
+                            <button type="button" class="s4-efeito-btn">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <svg class="cmain-s4-ondas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path class="cmain-s4-onda1" fill="#3384bd" fill-opacity="1"
+                    d="M0,96L21.8,101.3C43.6,107,87,117,131,149.3C174.5,181,218,235,262,229.3C305.5,224,349,160,393,122.7C436.4,85,480,75,524,90.7C567.3,107,611,149,655,176C698.2,203,742,213,785,202.7C829.1,192,873,160,916,160C960,160,1004,192,1047,218.7C1090.9,245,1135,267,1178,234.7C1221.8,203,1265,117,1309,96C1352.7,75,1396,117,1418,138.7L1440,160L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+                </path>
+                <path class="cmain-s4-onda2" fill="#3351bd" fill-opacity="1"
+                    d="M0,160L30,176C60,192,120,224,180,197.3C240,171,300,85,360,90.7C420,96,480,192,540,213.3C600,235,660,181,720,170.7C780,160,840,192,900,213.3C960,235,1020,245,1080,240C1140,235,1200,213,1260,186.7C1320,160,1380,128,1410,112L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+                </path>
+                <path class="cmain-s4-onda3" fill="#339fbd" fill-opacity="1"
+                    d="M0,288L18.5,256C36.9,224,74,160,111,149.3C147.7,139,185,181,222,165.3C258.5,149,295,75,332,48C369.2,21,406,43,443,80C480,117,517,171,554,202.7C590.8,235,628,245,665,250.7C701.5,256,738,256,775,245.3C812.3,235,849,213,886,197.3C923.1,181,960,171,997,186.7C1033.8,203,1071,245,1108,250.7C1144.6,256,1182,224,1218,192C1255.4,160,1292,128,1329,144C1366.2,160,1403,224,1422,256L1440,288L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z">
+                </path>
+            </svg>
+        </section>
+    </main>
+    <footer class="cfooter" id="contato">
+        <a href="mailto:fabioabreu71@gmail.com" target="_blank"><p class="cfooter-texto">fabioabreu71@gmail.com</p></a>
+        <div class="cfooter-img">
+            <img src="../img/F.png">
+            <span>.</span>
+            <img src="../img/A.png">
+            <span>.</span>
+            <img src="../img/B.png">
+            <span>.</span>
+            <img src="../img/I.png">
+            <span>.</span>
+            <img src="../img/O.png">
+        </div>
+    </footer>
+    <script src="../js/js-cadastro.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
